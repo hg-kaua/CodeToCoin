@@ -1,6 +1,7 @@
 from User import User
 from Video.Video import Video
 from Video.Film import Film
+from Video.Series import Series
 
 
 
@@ -12,7 +13,7 @@ print(f'Your plan: {user_hugo.plan} \nYour credit: ${user_hugo.card}')
 user_hugo.changePlan()
 print(f'Your plan: {user_hugo.plan} \nYour credit: ${user_hugo.card}')
 
-video = Video('Homem de ferro', 100,)
+video = Video('Homem de ferro', 100, 2008)
 
 
 video.play()
@@ -31,5 +32,12 @@ batman.advance()
 batman.advance()
 batman.advance()
 batman.comeBack()
+
+
+series_data = Series('The flash', 40, 2014)
+series_data2 = Series('Suits', 40, 2016)
+series_data3 = Series('Greys anatomy', 40, 2004)
+
+print(Series.all)
 
 
