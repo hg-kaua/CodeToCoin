@@ -1,5 +1,6 @@
 from User import User
-from Video import Video
+from Video.Video import Video
+from Video.Film import Film
 
 
 
@@ -11,7 +12,7 @@ print(f'Your plan: {user_hugo.plan} \nYour credit: ${user_hugo.card}')
 user_hugo.changePlan()
 print(f'Your plan: {user_hugo.plan} \nYour credit: ${user_hugo.card}')
 
-video = Video('Homem de ferro', 100)
+video = Video('Homem de ferro', 100,)
 
 
 video.play()
@@ -19,10 +20,16 @@ video.advance()
 video.comeBack()
 video.comeBack()
 video.advance()
-video.advance()
-video.advance()
-video.advance()
-video.advance()
-video.advance()
-video.advance()
-video.advance()
+
+batman = Film('Batman - Cavaleiro das trevas', 70, 2010)
+
+print(batman.title)
+batman.play()
+batman.stop()
+batman.advance()
+batman.advance()
+batman.advance()
+batman.advance()
+batman.comeBack()
+
+
