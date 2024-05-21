@@ -26,6 +26,18 @@ class Series(Video):
             raise Exception("Impossible to uptade sessons value")
         else:
             self.__seasons = value
+            
+    @property
+    def episodes(self):
+        return self.__episodes
+    
+    # setters
+    @episodes.setter
+    def episode(self, value):
+        if value >= 25:
+            raise Exception("Episode value are unavailable") 
+        else:
+            self.__episodes = value
     
     
     def __repr__(self):
